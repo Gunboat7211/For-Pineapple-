@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fbeaff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #e91e63;
+            font-size: 2em;
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff8a80;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="loveMessage"></h1>
+        <button onclick="displayLoveMessage()">Click for a Surprise</button>
+    </div>
+    <script>
+        function displayLoveMessage() {
+            const message = "I love you PINEAPPLE 🍍 I always did and I always will.";
+            const loveMessageElement = document.getElementById("loveMessage");
+            loveMessageElement.textContent = message;
+            loveMessageElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
